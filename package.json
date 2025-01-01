@@ -1,0 +1,20 @@
+{
+  "name": "terdo",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/index.ts --compile --outfile terdo",
+    "postinstall": "bunx lefthook install"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "latest",
+    "lefthook": "^1.10.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
